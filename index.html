@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RLUSD — Ripple USD Stablecoin | Swap, Bridge, Stake & Earn on XRPL</title>
+<meta name="description" content="RLUSD is Ripple's enterprise-grade USD stablecoin on the XRP Ledger. Swap, bridge, pool, stake and borrow RLUSD with instant settlement, OFAC compliance and zero counterparty risk. Start free today.">
+<meta name="keywords" content="RLUSD, Ripple USD, XRPL stablecoin, XRP Ledger, RLUSD swap, RLUSD bridge, RLUSD staking, RLUSD AML, Ripple stablecoin, XRPL DeFi, RLUSD compliance, RLUSD pool, RLUSD borrow, Ripple USD stablecoin">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="RLUSD">
+<meta name="language" content="English">
+<meta name="revisit-after" content="3 days">
+<meta name="theme-color" content="#050C1A">
+<link rel="canonical" href="https://rlusd.vercel.app/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rlusd.vercel.app/">
+<meta property="og:title" content="RLUSD — Ripple USD Stablecoin | Swap, Bridge & Stake on XRPL">
+<meta property="og:description" content="Ripple's enterprise USD stablecoin on the XRP Ledger. Instant settlement, OFAC-compliant, battle-tested. Swap, bridge, pool, stake and borrow RLUSD now.">
+<meta property="og:image" content="https://rlusd.vercel.app/og-image.png">
+<meta property="og:site_name" content="RLUSD">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Ripple">
+<meta name="twitter:title" content="RLUSD — Ripple USD Stablecoin on XRPL">
+<meta name="twitter:description" content="Swap, bridge, pool, stake and borrow RLUSD. Enterprise-grade USD stablecoin on the XRP Ledger. OFAC compliant · Instant settlement · Free to start.">
+<meta name="twitter:image" content="https://rlusd.vercel.app/twitter-card.png">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://rlusd.vercel.app/#website",
+      "url": "https://rlusd.vercel.app/",
+      "name": "RLUSD",
+      "description": "Ripple USD stablecoin on the XRP Ledger — swap, bridge, pool, stake and borrow",
+      "potentialAction": {"@type":"SearchAction","target":"https://rlusd.vercel.app/swap?q={search_term_string}","query-input":"required name=search_term_string"}
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://rlusd.vercel.app/#organization",
+      "name": "RLUSD",
+      "url": "https://rlusd.vercel.app/",
+      "description": "Enterprise-grade USD stablecoin on the XRP Ledger",
+      "sameAs": ["https://twitter.com/Ripple","https://linkedin.com/company/ripple"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "RLUSD DeFi Platform",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "offers": {"@type":"Offer","price":"0","priceCurrency":"USD"},
+      "description": "Swap, bridge, pool, stake and borrow RLUSD on the XRP Ledger"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"What is RLUSD?","acceptedAnswer":{"@type":"Answer","text":"RLUSD is Ripple's enterprise-grade USD stablecoin issued on the XRP Ledger (XRPL) and Ethereum. Each RLUSD is backed 1:1 by US dollar deposits and short-term US Treasuries held in segregated accounts."}},
+        {"@type":"Question","name":"Is RLUSD regulated?","acceptedAnswer":{"@type":"Answer","text":"Yes. RLUSD is approved by the New York Department of Financial Services (NYDFS) — one of the most rigorous stablecoin regulatory frameworks in the world. Monthly attestations are published by independent auditors."}},
+        {"@type":"Question","name":"What blockchain is RLUSD on?","acceptedAnswer":{"@type":"Answer","text":"RLUSD is natively issued on the XRP Ledger (XRPL) and Ethereum. XRPL supports instant settlement in under 4 seconds with minimal fees, making it ideal for high-frequency stablecoin transfers."}},
+        {"@type":"Question","name":"How do I swap RLUSD?","acceptedAnswer":{"@type":"Answer","text":"Connect your XRPL-compatible wallet (XUMM, Crossmark, MetaMask for Ethereum) and use the Swap widget on this page. RLUSD swaps settle in under 4 seconds via the XRPL DEX."}}
+      ]
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://rlusd.vercel.app/"},
+    {"@type":"ListItem","position":2,"name":"Swap RLUSD","item":"https://rlusd.vercel.app/swap"},
+    {"@type":"ListItem","position":3,"name":"RLUSD Staking","item":"https://rlusd.vercel.app/stake"}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+<!-- Favicon SVG inline -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2300C2FF'/%3E%3Cstop offset='1' stop-color='%230066FF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Arial Black' font-size='28' font-weight='900' fill='white' text-anchor='middle'%3E%24%3C/text%3E%3C/svg%3E">
+
+<style>
+/* ===== RESET ===== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+:root{
+  --deep:#050C1A;--deep2:#080F22;--deep3:#0C1530;--deep4:#111E40;
+  --blue:#0066FF;--blue2:#0088FF;--blue3:#00AAFF;--blue4:#00C2FF;
+  --cyan:#00E5FF;--cyan2:#80F0FF;
+  --silver:#E8F0FF;--silver2:#C0CFEE;--silver3:#8899CC;--silver4:#5566AA;
+  --green:#00E5A0;--red:#FF4060;--yellow:#FFB800;
+  --card:rgba(255,255,255,.04);--card2:rgba(255,255,255,.07);
+  --border:rgba(0,102,255,.2);--border2:rgba(0,170,255,.3);
+  --glow:rgba(0,102,255,.15);--glow2:rgba(0,229,255,.1);
+  --text:#E8F0FF;--text2:#8899CC;--text3:#5566AA;
+  --font:'Syne',sans-serif;--body:'DM Sans',sans-serif;
+  --radius:14px;--radius-lg:22px;--radius-xl:32px;
+  --shadow:0 4px 32px rgba(0,102,255,.12);
+  --shadow-lg:0 12px 64px rgba(0,102,255,.2);
+}
+
+body{background:var(--deep);color:var(--text);font-family:var(--body);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;font-family:inherit}
+ul{list-style:none}
+.container{max-width:1260px;margin:0 auto;padding:0 2rem}
+.section{padding:6rem 0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Mesh background */
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 20% 10%,rgba(0,102,255,.08) 0%,transparent 60%),radial-gradient(ellipse 60% 80% at 80% 90%,rgba(0,229,255,.06) 0%,transparent 60%);pointer-events:none;z-index:0}
+
+/* ===== TYPOGRAPHY ===== */
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--font);font-size:.68rem;font-weight:700;letter-spacing:.2em;color:var(--blue3);text-transform:uppercase;border:1px solid var(--border2);padding:.3rem 1rem;border-radius:100px;margin-bottom:1.25rem;background:rgba(0,136,255,.06)}
+.pulse{width:6px;height:6px;border-radius:50%;background:var(--cyan);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+h1,h2,h3,h4{font-family:var(--font);letter-spacing:-.02em;line-height:1.06}
+h1{font-size:clamp(2.6rem,5vw,4.6rem);font-weight:800}
+h2{font-size:clamp(1.9rem,3.5vw,3rem);font-weight:800}
+h3{font-size:1.15rem;font-weight:700}
+p{line-height:1.75}
+.lead{font-size:1.05rem;color:var(--text2);max-width:580px;line-height:1.8}
+.accent{background:linear-gradient(90deg,var(--blue3),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+/* ===== BUTTONS ===== */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:.8rem 1.75rem;border-radius:100px;font-family:var(--font);font-weight:700;font-size:.875rem;border:none;transition:all .2s;letter-spacing:.01em;position:relative;overflow:hidden;white-space:nowrap}
+.btn::after{content:'';position:absolute;inset:0;background:rgba(255,255,255,.1);opacity:0;transition:.2s}
+.btn:hover::after{opacity:1}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue3));color:#fff;box-shadow:0 0 32px rgba(0,102,255,.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 4px 48px rgba(0,102,255,.5)}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border2)}
+.btn-ghost:hover{border-color:var(--blue3);color:var(--blue3)}
+.btn-cyan{background:linear-gradient(135deg,var(--blue4),var(--cyan));color:var(--deep);font-weight:800}
+.btn-cyan:hover{transform:translateY(-2px);box-shadow:0 4px 32px rgba(0,229,255,.3)}
+.btn-lg{padding:1rem 2.5rem;font-size:1rem}
+.btn-full{width:100%;justify-content:center}
+
+/* ===== NAV ===== */
+.nav{background:rgba(5,12,26,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:200}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;overflow:hidden}
+.logo-mark::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.3),transparent)}
+.logo-svg{width:22px;height:22px}
+.logo-text{font-family:var(--font);font-weight:800;font-size:1.3rem;color:var(--silver);letter-spacing:-.03em}
+.logo-text span{background:linear-gradient(90deg,var(--blue3),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.nav-links{display:flex;align-items:center;gap:.15rem}
+.nav-links a{color:var(--text2);font-size:.875rem;font-weight:500;padding:.5rem .9rem;border-radius:8px;transition:.2s}
+.nav-links a:hover{color:var(--blue3);background:rgba(0,102,255,.08)}
+.nav-cta{display:flex;align-items:center;gap:.75rem}
+.connect-btn{display:flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--blue),var(--blue3));color:#fff;padding:.55rem 1.35rem;border-radius:100px;font-family:var(--font);font-weight:700;font-size:.82rem;border:none;transition:.2s;letter-spacing:.01em}
+.connect-btn:hover{box-shadow:0 0 24px rgba(0,102,255,.4);transform:translateY(-1px)}
+.connect-btn.connected{background:rgba(0,102,255,.12);color:var(--blue3);border:1px solid var(--border2)}
+.nav-dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);animation:pulse 2s infinite;flex-shrink:0}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;padding:6px;background:none;border:none}
+.nav-hamburger span{width:22px;height:2px;background:var(--silver);border-radius:2px;transition:.3s}
+.mobile-nav{display:none;background:var(--deep2);border-top:1px solid var(--border);padding:1rem 2rem 1.5rem}
+.mobile-nav a{display:block;color:var(--text2);padding:.65rem 0;font-size:.95rem;border-bottom:1px solid rgba(0,102,255,.07)}
+.mobile-nav a:hover{color:var(--blue3)}
+
+/* ===== NOTICE BAR ===== */
+.notice-bar{background:linear-gradient(90deg,rgba(0,102,255,.15),rgba(0,229,255,.1));border-bottom:1px solid var(--border2);padding:.55rem 2rem;text-align:center;font-size:.78rem;color:var(--blue3);font-weight:500}
+.notice-bar a{color:var(--cyan);text-decoration:underline}
+.notice-bar strong{color:var(--cyan2)}
+
+/* ===== HERO ===== */
+.hero{padding:5.5rem 0 3rem;position:relative;overflow:hidden}
+.hero-orb{position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(0,102,255,.12) 0%,transparent 70%);top:-200px;right:-150px;pointer-events:none;animation:float 8s ease-in-out infinite}
+.hero-orb2{position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(0,229,255,.08) 0%,transparent 70%);bottom:-100px;left:-100px;pointer-events:none;animation:float 10s ease-in-out infinite reverse}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-30px)}}
+.hero-grid{display:grid;grid-template-columns:1fr 440px;gap:4rem;align-items:center;position:relative;z-index:1}
+.hero-sub{color:var(--text2);font-size:1.05rem;max-width:520px;line-height:1.8;margin-bottom:2.5rem}
+.hero-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:3rem}
+.hero-trust{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.trust-chip{display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--text3);font-weight:500}
+.trust-chip::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
+
+/* Token card */
+.token-card{background:var(--card);border:1px solid var(--border2);border-radius:var(--radius-xl);padding:2rem;position:relative;overflow:hidden}
+.token-card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--blue3),transparent)}
+.token-top{display:flex;align-items:center;gap:12px;margin-bottom:1.5rem}
+.token-img{width:52px;height:52px;border-radius:50%;border:2px solid var(--border2)}
+.token-info h3{font-family:var(--font);font-size:1rem;font-weight:800;color:var(--silver);letter-spacing:-.01em}
+.token-info p{font-size:.75rem;color:var(--blue3);margin-top:2px}
+.live-tag{display:inline-flex;align-items:center;gap:5px;background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.2);border-radius:100px;padding:.2rem .65rem;font-size:.7rem;font-family:var(--font);font-weight:700;color:var(--green);margin-left:auto}
+.price-display{font-family:var(--font);font-weight:900;font-size:2.8rem;color:var(--silver);letter-spacing:-.04em;line-height:1;margin-bottom:.4rem}
+.price-change{display:inline-flex;align-items:center;gap:4px;padding:.22rem .65rem;border-radius:100px;font-size:.78rem;font-family:var(--font);font-weight:700}
+.up{background:rgba(0,229,160,.1);color:var(--green);border:1px solid rgba(0,229,160,.2)}
+.dn{background:rgba(255,64,96,.1);color:var(--red);border:1px solid rgba(255,64,96,.2)}
+.spark-area{height:60px;margin:1.25rem 0}
+.spark-area svg{width:100%;height:100%}
+.token-stats{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-bottom:1.25rem}
+.ts-box{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px;padding:.75rem .9rem}
+.ts-lbl{font-size:.67rem;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:.25rem}
+.ts-val{font-family:var(--font);font-size:.92rem;font-weight:800;color:var(--silver)}
+
+/* ===== STATS BAND ===== */
+.stats-band{background:var(--deep2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stats-inner{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-col{padding:2.5rem 2rem;text-align:center;border-right:1px solid var(--border)}
+.stat-col:last-child{border-right:none}
+.stat-num{font-family:var(--font);font-size:2.3rem;font-weight:900;letter-spacing:-.04em;display:block;line-height:1;background:linear-gradient(135deg,var(--blue3),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-lbl{font-size:.72rem;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;margin-top:.4rem;font-weight:600}
+.stat-sub{font-size:.7rem;color:var(--text3);margin-top:.2rem;opacity:.7}
+
+/* ===== DeFi WIDGET ===== */
+.defi-section{background:var(--deep2);padding:6rem 0;position:relative;overflow:hidden}
+.defi-section::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:900px;height:900px;border-radius:50%;border:1px solid rgba(0,102,255,.05);pointer-events:none}
+.defi-center{max-width:900px;margin:0 auto;text-align:center;position:relative;z-index:1}
+.defi-center h2{color:var(--silver);margin-bottom:.75rem}
+.defi-center .lead{margin:0 auto 2.5rem;color:var(--text2)}
+
+/* Tab nav */
+.defi-tabs{display:flex;justify-content:center;gap:.4rem;flex-wrap:wrap;margin-bottom:2rem}
+.dtab{background:var(--card);border:1px solid var(--border);border-radius:100px;padding:.5rem 1.25rem;font-family:var(--font);font-size:.82rem;font-weight:700;color:var(--text2);cursor:pointer;transition:.2s;display:flex;align-items:center;gap:.4rem}
+.dtab:hover{border-color:var(--border2);color:var(--blue3)}
+.dtab.active{background:linear-gradient(135deg,var(--blue),var(--blue3));color:#fff;border-color:transparent;box-shadow:0 0 20px rgba(0,102,255,.3)}
+.dtab-icon{font-size:.9rem}
+
+/* Widget Box */
+.widget-box{background:rgba(255,255,255,.03);border:1px solid var(--border2);border-radius:var(--radius-xl);padding:2rem;text-align:left;position:relative;overflow:hidden}
+.widget-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--blue3),var(--cyan),transparent)}
+.widget-pane{display:none}
+.widget-pane.active{display:block;animation:fadeUp .3s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* Swap pane */
+.swap-row{display:flex;gap:.6rem;align-items:center;margin-bottom:.75rem}
+.token-select{display:flex;align-items:center;gap:.5rem;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:.65rem 1rem;font-family:var(--font);font-weight:700;font-size:.88rem;color:var(--silver);cursor:pointer;white-space:nowrap;transition:.2s}
+.token-select img{width:22px;height:22px;border-radius:50%}
+.token-select:hover{border-color:var(--border2)}
+.amount-input{flex:1;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.65rem 1rem;color:var(--silver);font-family:var(--font);font-size:1rem;font-weight:700;outline:none;transition:.2s}
+.amount-input:focus{border-color:var(--border2)}
+.amount-input::placeholder{color:var(--text3)}
+.swap-arrow{width:36px;height:36px;border-radius:50%;background:var(--card2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;margin:0 auto .5rem;transition:.2s;color:var(--blue3)}
+.swap-arrow:hover{background:rgba(0,102,255,.15);border-color:var(--border2);transform:rotate(180deg)}
+.swap-info-row{display:flex;justify-content:space-between;font-size:.8rem;color:var(--text3);margin:.5rem 0;padding:0 .25rem}
+.swap-info-row span:last-child{color:var(--silver2)}
+
+/* Pool pane */
+.pool-stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin:1.25rem 0}
+.pstat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem;text-align:center}
+.pstat-val{font-family:var(--font);font-size:1.25rem;font-weight:800;color:var(--silver);display:block}
+.pstat-lbl{font-size:.7rem;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;margin-top:.2rem;font-weight:600}
+
+/* Staking pane */
+.stake-tiers{display:flex;flex-direction:column;gap:.6rem;margin:1.25rem 0}
+.stake-tier{display:flex;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem}
+.stake-tier:hover{border-color:var(--border2);background:var(--card2)}
+.tier-info{display:flex;flex-direction:column;gap:2px}
+.tier-name{font-family:var(--font);font-weight:700;font-size:.9rem;color:var(--silver)}
+.tier-lock{font-size:.75rem;color:var(--text3)}
+.tier-apy{font-family:var(--font);font-weight:800;font-size:1.15rem;color:var(--green)}
+
+/* Borrow pane */
+.borrow-markets{display:flex;flex-direction:column;gap:.6rem;margin:1.25rem 0}
+.bmarket{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:1rem;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem}
+.bmarket-asset{display:flex;align-items:center;gap:.5rem;font-family:var(--font);font-weight:700;color:var(--silver);font-size:.9rem}
+.bmarket-asset img{width:22px;height:22px;border-radius:50%}
+.bmarket-apr{font-size:.85rem;color:var(--text3)}
+.bmarket-apr span{font-family:var(--font);font-weight:700;color:var(--yellow)}
+
+/* Bridge pane */
+.bridge-chains{display:flex;align-items:center;justify-content:center;gap:1.5rem;margin:1.5rem 0}
+.chain-pill{display:flex;flex-direction:column;align-items:center;gap:.4rem}
+.chain-badge{width:56px;height:56px;border-radius:16px;background:var(--card2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.4rem;cursor:pointer;transition:.2s}
+.chain-badge:hover{border-color:var(--border2)}
+.chain-badge.sel{border-color:var(--blue3);background:rgba(0,102,255,.12);box-shadow:0 0 20px rgba(0,102,255,.2)}
+.chain-name{font-size:.72rem;color:var(--text3);font-weight:600;font-family:var(--font)}
+.bridge-arrow{font-size:1.5rem;color:var(--blue3);margin-top:-16px}
+
+/* ===== FEATURES ===== */
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3.5rem}
+.f-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;transition:.25s;position:relative;overflow:hidden}
+.f-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--cyan));transform:scaleX(0);transform-origin:left;transition:.3s}
+.f-card:hover{border-color:var(--border2);box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.f-card:hover::before{transform:scaleX(1)}
+.f-num{font-family:var(--font);font-size:2.8rem;font-weight:900;color:rgba(0,102,255,.12);letter-spacing:-.06em;line-height:1;margin-bottom:1rem}
+.f-card h3{font-size:.95rem;color:var(--silver);margin-bottom:.5rem}
+.f-card p{font-size:.845rem;color:var(--text2);line-height:1.72}
+
+/* ===== HOW IT WORKS ===== */
+.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3.5rem;position:relative}
+.how-grid::before{content:'';position:absolute;top:30px;left:16%;right:16%;height:1px;background:linear-gradient(90deg,transparent,var(--border2),transparent)}
+.how-step{text-align:center;position:relative;z-index:1}
+.step-num{width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue3));border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;font-family:var(--font);font-size:1.4rem;font-weight:900;color:#fff;margin:0 auto 1.25rem;box-shadow:0 0 24px rgba(0,102,255,.3)}
+.how-step h3{margin-bottom:.5rem;font-size:.95rem;color:var(--silver)}
+.how-step p{font-size:.845rem;color:var(--text2);line-height:1.72}
+
+/* ===== FAQ ===== */
+.faq-section{background:var(--deep2)}
+.faq-cols{display:grid;grid-template-columns:300px 1fr;gap:4rem;align-items:start;margin-top:3rem}
+.faq-sidebar h3{font-size:.95rem;color:var(--text2);font-weight:400;line-height:1.75;margin-bottom:1.5rem}
+.faq-cats{display:flex;flex-direction:column;gap:.4rem}
+.fcat{padding:.6rem 1rem;border-radius:10px;font-family:var(--font);font-size:.85rem;font-weight:700;color:var(--text3);cursor:pointer;transition:.2s;border:none;background:none;text-align:left}
+.fcat:hover,.fcat.active{background:rgba(0,102,255,.12);color:var(--blue3)}
+.faq-list{display:flex;flex-direction:column}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:first-child{border-top:1px solid var(--border)}
+.faq-trigger{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:1rem;width:100%;background:none;border:none;cursor:pointer;text-align:left}
+.faq-q{font-family:var(--font);font-size:.9rem;font-weight:700;color:var(--silver);flex:1}
+.faq-item.open .faq-q{color:var(--blue3)}
+.faq-ico{width:28px;height:28px;border-radius:50%;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--text3);transition:.3s;font-size:.8rem}
+.faq-item.open .faq-ico{transform:rotate(45deg);border-color:var(--blue3);color:var(--blue3);background:rgba(0,102,255,.08)}
+.faq-ans{font-size:.855rem;color:var(--text2);line-height:1.78;max-height:0;overflow:hidden;transition:.35s ease;padding-bottom:0}
+.faq-item.open .faq-ans{max-height:600px;padding-bottom:1.25rem}
+
+/* ===== TESTIMONIALS ===== */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3.5rem}
+.testi-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;transition:.2s}
+.testi-card:hover{border-color:var(--border2)}
+.testi-stars{display:flex;gap:3px;margin-bottom:1rem}
+.star{width:13px;height:13px;background:var(--yellow);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.testi-text{font-size:.855rem;color:var(--text2);line-height:1.75;margin-bottom:1.25rem;font-style:italic}
+.testi-author{display:flex;align-items:center;gap:.75rem}
+.testi-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;font-family:var(--font);font-weight:800;font-size:.78rem;color:#fff;flex-shrink:0}
+.testi-name{font-family:var(--font);font-size:.85rem;font-weight:700;color:var(--silver)}
+.testi-role{font-size:.72rem;color:var(--text3);margin-top:1px}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,var(--deep3),var(--deep4));border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:5.5rem 0;text-align:center;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 50% 50%,rgba(0,102,255,.1) 0%,transparent 70%)}
+.cta-banner h2{color:var(--silver);margin-bottom:.75rem;position:relative;z-index:1}
+.cta-banner p{color:var(--text2);margin-bottom:2rem;position:relative;z-index:1}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+
+/* ===== FOOTER ===== */
+footer{background:var(--deep2);border-top:1px solid var(--border);padding:4rem 0 2rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-brand p{font-size:.845rem;color:var(--text3);line-height:1.75;margin-top:.75rem;max-width:280px}
+.footer-col h4{font-family:var(--font);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text3);margin-bottom:1rem}
+.footer-col ul li{margin-bottom:.5rem}
+.footer-col ul a{font-size:.845rem;color:var(--text3);transition:.2s}
+.footer-col ul a:hover{color:var(--blue3)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:1.5rem;border-top:1px solid var(--border);flex-wrap:wrap;gap:.75rem}
+.footer-bottom p{font-size:.78rem;color:var(--text3)}
+.footer-badges{display:flex;gap:.5rem}
+.fbadge{background:rgba(0,102,255,.07);border:1px solid var(--border);border-radius:6px;padding:.25rem .65rem;font-size:.68rem;font-family:var(--font);font-weight:700;color:var(--text3);letter-spacing:.06em;text-transform:uppercase}
+
+/* ===== MODAL ===== */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(5,12,26,.85);backdrop-filter:blur(8px);z-index:999;align-items:center;justify-content:center;padding:1rem}
+.modal-overlay.open{display:flex}
+.modal-box{background:var(--deep3);border:1px solid var(--border2);border-radius:var(--radius-xl);padding:2.5rem;max-width:440px;width:100%;animation:fadeUp .3s ease;position:relative;overflow:hidden}
+.modal-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--blue3),var(--cyan),transparent)}
+.modal-box h3{font-family:var(--font);font-weight:800;font-size:1.3rem;color:var(--silver);margin-bottom:.4rem}
+.modal-box p{color:var(--text2);font-size:.875rem;margin-bottom:2rem;line-height:1.65}
+.wallet-opts{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:1.25rem}
+.wopt{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem .85rem;cursor:pointer;text-align:center;transition:.2s}
+.wopt:hover{border-color:var(--border2);background:rgba(0,102,255,.08)}
+.wopt-icon{font-size:1.5rem;margin-bottom:.35rem;display:block}
+.wopt-name{font-family:var(--font);font-size:.78rem;font-weight:700;color:var(--silver)}
+.wopt-sub{font-size:.65rem;color:var(--text3);margin-top:2px}
+.modal-cancel{width:100%;padding:.7rem;background:transparent;border:1px solid var(--border);border-radius:10px;color:var(--text3);font-family:var(--body);font-size:.875rem;transition:.2s}
+.modal-cancel:hover{border-color:var(--border2);color:var(--text2)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:3rem}
+  .token-card{max-width:480px}
+  .features-grid,.how-grid,.testi-grid{grid-template-columns:1fr 1fr}
+  .faq-cols{grid-template-columns:1fr}
+  .faq-sidebar{display:none}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+  .stat-col:nth-child(2){border-right:none}
+}
+@media(max-width:768px){
+  .section{padding:4rem 0}
+  h1{font-size:2.2rem}
+  h2{font-size:1.8rem}
+  .nav-links,.nav-cta{display:none}
+  .nav-hamburger{display:flex}
+  .features-grid,.how-grid,.testi-grid{grid-template-columns:1fr}
+  .how-grid::before{display:none}
+  .footer-grid{grid-template-columns:1fr}
+  .pool-stat-row{grid-template-columns:1fr}
+  .bridge-chains{flex-wrap:wrap}
+}
+@media(max-width:480px){
+  .container{padding:0 1.25rem}
+  .stats-inner{grid-template-columns:1fr}
+  .stat-col{border-right:none;border-bottom:1px solid var(--border)}
+  .wallet-opts{grid-template-columns:1fr 1fr}
+  .token-stats{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="sr-only">Skip to main content</a>
+
+<!-- Notice Bar -->
+<div class="notice-bar" role="banner">
+  <strong>New:</strong> RLUSD now live on XRP Ledger mainnet. NYDFS-approved · Fully backed 1:1. <a href="#defi">Start earning →</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/" aria-label="RLUSD Homepage">
+        <div class="logo-mark">
+          <svg class="logo-svg" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="10" fill="white" fill-opacity="0.15"/>
+            <path d="M11 3C11 3 16 5.5 16 11C16 16.5 11 19 11 19C11 19 6 16.5 6 11C6 5.5 11 3Z" fill="white" fill-opacity="0.9"/>
+            <circle cx="11" cy="11" r="3" fill="#050C1A"/>
+          </svg>
+        </div>
+        <span class="logo-text">RL<span>USD</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#defi">DeFi</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#docs">Docs</a></li>
+      </ul>
+      <div class="nav-cta">
+        <button class="connect-btn xrpl-wallet-connect" id="walletBtn" onclick="openModal()" aria-label="Connect XRPL wallet">
+          <div class="nav-dot"></div>
+          Connect Wallet
+        </button>
+      </div>
+      <button class="nav-hamburger" onclick="toggleMobile()" aria-label="Toggle menu" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav" role="menu">
+    <a href="#defi" onclick="toggleMobile()">DeFi</a>
+    <a href="#features" onclick="toggleMobile()">Features</a>
+    <a href="#how" onclick="toggleMobile()">How It Works</a>
+    <a href="#faq" onclick="toggleMobile()">FAQ</a>
+    <a href="#docs" onclick="toggleMobile()">Docs</a>
+    <div style="padding-top:1rem">
+      <button class="connect-btn xrpl-wallet-connect" style="width:100%;justify-content:center" onclick="openModal();toggleMobile()">
+        <div class="nav-dot"></div> Connect Wallet
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<main id="main-content">
+<header class="hero" role="banner">
+  <div class="hero-orb" aria-hidden="true"></div>
+  <div class="hero-orb2" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="eyebrow"><span class="pulse" aria-hidden="true"></span>XRP Ledger · NYDFS Approved · Fully Backed</div>
+        <h1>
+          The future of<br>
+          <span class="accent">USD on XRPL</span><br>
+          is here
+        </h1>
+        <p class="hero-sub">
+          RLUSD is Ripple's enterprise-grade, fully regulated USD stablecoin on the XRP Ledger. Swap, bridge, pool, stake and borrow with 4-second settlement and near-zero fees.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg xrpl-wallet-connect" onclick="openModal()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="6" width="22" height="13" rx="3"/><path d="M1 10h22"/></svg>
+            Connect Wallet — Free
+          </button>
+          <button class="btn btn-ghost btn-lg xrpl-wallet-connect" onclick="goToSection('defi')">
+            Start Earning RLUSD →
+          </button>
+        </div>
+        <div class="hero-trust" role="list" aria-label="Trust indicators">
+          <div class="trust-chip" role="listitem">NYDFS Regulated</div>
+          <div class="trust-chip" role="listitem">1:1 USD Backed</div>
+          <div class="trust-chip" role="listitem">Monthly Audits</div>
+          <div class="trust-chip" role="listitem">OFAC Compliant</div>
+        </div>
+      </div>
+
+      <!-- Token Card -->
+      <aside class="token-card" aria-label="RLUSD live price">
+        <div class="token-top">
+          <img class="token-img" src="https://s2.coinmarketcap.com/static/img/coins/64x64/34387.png" alt="RLUSD token logo" width="52" height="52">
+          <div class="token-info">
+            <h3>Ripple USD</h3>
+            <p>RLUSD · XRP Ledger</p>
+          </div>
+          <div class="live-tag"><span class="pulse" style="width:5px;height:5px" aria-hidden="true"></span>LIVE</div>
+        </div>
+        <div aria-live="polite" aria-label="RLUSD price">
+          <div class="price-display" id="priceDisplay">$1.0001</div>
+          <span class="price-change up" id="priceDelta">▲ +0.010%</span>
+        </div>
+        <div class="spark-area" aria-hidden="true">
+          <svg viewBox="0 0 380 60" preserveAspectRatio="none" id="sparkSvg">
+            <defs>
+              <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#00AAFF" stop-opacity="0.3"/>
+                <stop offset="1" stop-color="#00AAFF" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path id="sparkFill" fill="url(#sparkGrad)" d=""/>
+            <polyline id="sparkLine" fill="none" stroke="url(#lineGrad)" stroke-width="1.8" stroke-linejoin="round" points=""/>
+            <defs>
+              <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#0066FF"/>
+                <stop offset="1" stop-color="#00E5FF"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="token-stats">
+          <div class="ts-box"><div class="ts-lbl">Market Cap</div><div class="ts-val">$520M+</div></div>
+          <div class="ts-box"><div class="ts-lbl">24h Volume</div><div class="ts-val">$84M</div></div>
+          <div class="ts-box"><div class="ts-lbl">Circulating</div><div class="ts-val">520M RL</div></div>
+          <div class="ts-box"><div class="ts-lbl">Settlement</div><div class="ts-val">&lt; 4 sec</div></div>
+        </div>
+        <button class="btn btn-cyan btn-full xrpl-wallet-connect" style="border-radius:var(--radius);margin-top:.25rem" onclick="openModal()">
+          Start with RLUSD →
+        </button>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<!-- ===== STATS ===== -->
+<section class="stats-band" aria-label="Platform statistics">
+  <div class="stats-inner container">
+    <div class="stat-col">
+      <span class="stat-num">$520M+</span>
+      <div class="stat-lbl">RLUSD in circulation</div>
+      <div class="stat-sub">Growing daily</div>
+    </div>
+    <div class="stat-col">
+      <span class="stat-num">4 sec</span>
+      <div class="stat-lbl">Settlement speed</div>
+      <div class="stat-sub">XRP Ledger finality</div>
+    </div>
+    <div class="stat-col">
+      <span class="stat-num">$0.001</span>
+      <div class="stat-lbl">Avg. transaction fee</div>
+      <div class="stat-sub">Near-zero cost</div>
+    </div>
+    <div class="stat-col">
+      <span class="stat-num">100%</span>
+      <div class="stat-lbl">USD reserve backed</div>
+      <div class="stat-sub">Monthly attestations</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DeFi WIDGET ===== -->
+<section class="defi-section" id="defi" aria-labelledby="defi-heading">
+  <div class="container">
+    <div class="defi-center">
+      <div class="eyebrow"><span class="pulse" aria-hidden="true"></span>XRPL DeFi Suite</div>
+      <h2 id="defi-heading" style="color:var(--silver)">Everything you need for <span class="accent">RLUSD DeFi</span></h2>
+      <p class="lead" style="color:var(--text2);margin:0 auto 2.5rem">Swap, bridge, provide liquidity, stake, borrow and more — all powered by the XRP Ledger's native DEX and AMM.</p>
+
+      <!-- Tab navigation -->
+      <div class="defi-tabs" role="tablist">
+        <button class="dtab active" role="tab" aria-selected="true" onclick="switchTab('swap',this)"><span class="dtab-icon">⇄</span> Swap</button>
+        <button class="dtab" role="tab" aria-selected="false" onclick="switchTab('bridge',this)"><span class="dtab-icon">⛓</span> Bridge</button>
+        <button class="dtab" role="tab" aria-selected="false" onclick="switchTab('pool',this)"><span class="dtab-icon">💧</span> Pool</button>
+        <button class="dtab" role="tab" aria-selected="false" onclick="switchTab('stake',this)"><span class="dtab-icon">🔒</span> Staking</button>
+        <button class="dtab" role="tab" aria-selected="false" onclick="switchTab('borrow',this)"><span class="dtab-icon">🏦</span> Borrow</button>
+        <button class="dtab" role="tab" aria-selected="false" onclick="switchTab('earn',this)"><span class="dtab-icon">💰</span> Earn</button>
+      </div>
+
+      <div class="widget-box">
+
+        <!-- SWAP -->
+        <div class="widget-pane active" id="pane-swap">
+          <div style="margin-bottom:1rem">
+            <div style="font-size:.72rem;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:.5rem">You send</div>
+            <div class="swap-row">
+              <div class="token-select">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/34387.png" alt="RLUSD" width="22" height="22"> RLUSD ▾
+              </div>
+              <input class="amount-input" type="number" placeholder="0.00" id="swapFrom">
+            </div>
+          </div>
+          <div class="swap-arrow" onclick="flipSwap()" aria-label="Flip swap direction">⇅</div>
+          <div style="margin-bottom:1.25rem">
+            <div style="font-size:.72rem;color:var(--text3);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:.5rem">You receive</div>
+            <div class="swap-row">
+              <div class="token-select" id="toTokenSelect">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt="XRP" width="22" height="22"> XRP ▾
+              </div>
+              <input class="amount-input" type="number" placeholder="0.00" id="swapTo" readonly>
+            </div>
+          </div>
+          <div class="swap-info-row"><span>Rate</span><span>1 RLUSD = <span id="xrpRate">1.877</span> XRP</span></div>
+          <div class="swap-info-row"><span>Fee</span><span>0.1% · ~$0.001</span></div>
+          <div class="swap-info-row"><span>Settlement</span><span>~3.8 seconds</span></div>
+          <div class="swap-info-row"><span>Slippage</span><span>Auto (0.5%)</span></div>
+          <button class="btn btn-primary btn-full xrpl-wallet-connect" style="margin-top:1.25rem;border-radius:var(--radius)" onclick="openModal()">
+            Connect Wallet to Swap
+          </button>
+        </div>
+
+        <!-- BRIDGE -->
+        <div class="widget-pane" id="pane-bridge">
+          <p style="color:var(--text2);font-size:.875rem;margin-bottom:1.5rem">Bridge RLUSD between XRP Ledger and Ethereum trustlessly via Ripple's official bridge protocol.</p>
+          <div class="bridge-chains">
+            <div class="chain-pill">
+              <div class="chain-badge sel" aria-label="From: XRP Ledger">🌐</div>
+              <div class="chain-name">XRPL</div>
+            </div>
+            <div class="bridge-arrow">→</div>
+            <div class="chain-pill">
+              <div class="chain-badge" aria-label="To: Ethereum">⟠</div>
+              <div class="chain-name">Ethereum</div>
+            </div>
+            <div class="bridge-arrow" style="opacity:.3">→</div>
+            <div class="chain-pill">
+              <div class="chain-badge">🔺</div>
+              <div class="chain-name">Avalanche</div>
+            </div>
+            <div class="bridge-arrow" style="opacity:.3">→</div>
+            <div class="chain-pill">
+              <div class="chain-badge">🟣</div>
+              <div class="chain-name">Polygon</div>
+            </div>
+          </div>
+          <div class="swap-row" style="margin-top:1rem">
+            <input class="amount-input" type="number" placeholder="Amount RLUSD to bridge" style="flex:1">
+          </div>
+          <div class="swap-info-row" style="margin-top:.75rem"><span>Bridge fee</span><span>0.05%</span></div>
+          <div class="swap-info-row"><span>Time</span><span>~30 seconds</span></div>
+          <button class="btn btn-primary btn-full xrpl-wallet-connect" style="margin-top:1.25rem;border-radius:var(--radius)" onclick="openModal()">Connect Wallet to Bridge</button>
+        </div>
+
+        <!-- POOL -->
+        <div class="widget-pane" id="pane-pool">
+          <p style="color:var(--text2);font-size:.875rem;margin-bottom:.75rem">Provide liquidity to XRPL AMM pools and earn trading fees automatically.</p>
+          <div class="pool-stat-row">
+            <div class="pstat"><span class="pstat-val">$12.4M</span><div class="pstat-lbl">RLUSD/XRP TVL</div></div>
+            <div class="pstat"><span class="pstat-val" style="color:var(--green)">8.4%</span><div class="pstat-lbl">APR (7d avg)</div></div>
+            <div class="pstat"><span class="pstat-val">2,140</span><div class="pstat-lbl">LPs active</div></div>
+          </div>
+          <div style="display:flex;gap:.6rem;margin-bottom:1rem">
+            <div style="flex:1;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.75rem;text-align:center;font-family:var(--font);font-weight:700;font-size:.88rem;color:var(--silver)">RLUSD / XRP</div>
+            <div style="flex:1;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:.75rem;text-align:center;font-family:var(--font);font-weight:700;font-size:.88rem;color:var(--text3)">RLUSD / USDC</div>
+          </div>
+          <button class="btn btn-primary btn-full xrpl-wallet-connect" style="border-radius:var(--radius)" onclick="openModal()">Connect Wallet to Add Liquidity</button>
+        </div>
+
+        <!-- STAKING -->
+        <div class="widget-pane" id="pane-stake">
+          <p style="color:var(--text2);font-size:.875rem;margin-bottom:.75rem">Lock RLUSD for fixed terms and earn guaranteed yield paid in RLUSD.</p>
+          <div class="stake-tiers" role="list">
+            <div class="stake-tier" role="listitem">
+              <div class="tier-info"><div class="tier-name">Flex Stake</div><div class="tier-lock">No lock-up · Withdraw anytime</div></div>
+              <div class="tier-apy">4.2% APY</div>
+              <button class="btn btn-ghost btn-sm xrpl-wallet-connect" style="padding:.4rem 1rem;font-size:.78rem" onclick="openModal()">Stake</button>
+            </div>
+            <div class="stake-tier" role="listitem">
+              <div class="tier-info"><div class="tier-name">30-Day Lock</div><div class="tier-lock">30 day fixed term</div></div>
+              <div class="tier-apy">6.8% APY</div>
+              <button class="btn btn-ghost btn-sm xrpl-wallet-connect" style="padding:.4rem 1rem;font-size:.78rem" onclick="openModal()">Stake</button>
+            </div>
+            <div class="stake-tier" role="listitem">
+              <div class="tier-info"><div class="tier-name">90-Day Lock</div><div class="tier-lock">90 day fixed term</div></div>
+              <div class="tier-apy">9.5% APY</div>
+              <button class="btn btn-ghost btn-sm xrpl-wallet-connect" style="padding:.4rem 1rem;font-size:.78rem" onclick="openModal()">Stake</button>
+            </div>
+            <div class="stake-tier" role="listitem">
+              <div class="tier-info"><div class="tier-name">1-Year Lock</div><div class="tier-lock">365 day fixed term</div></div>
+              <div class="tier-apy" style="color:var(--cyan)">14.2% APY</div>
+              <button class="btn btn-ghost btn-sm xrpl-wallet-connect" style="padding:.4rem 1rem;font-size:.78rem" onclick="openModal()">Stake</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- BORROW -->
+        <div class="widget-pane" id="pane-borrow">
+          <p style="color:var(--text2);font-size:.875rem;margin-bottom:.75rem">Borrow RLUSD against XRP or other XRPL collateral at competitive rates.</p>
+          <div class="borrow-markets" role="list">
+            <div class="bmarket" role="listitem">
+              <div class="bmarket-asset"><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/52.png" alt="XRP" width="22" height="22"> XRP Collateral</div>
+              <div class="bmarket-apr">Borrow APR <span>3.9%</span></div>
+              <button class="btn btn-ghost btn-sm xrpl-wallet-connect" style="padding:.4rem 1rem;font-size:.78rem" onclick="openModal()">Borrow</button>
+            </div>
+            <div class="bmarket" role="listitem">
+              <div class="bmarket-asset"><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/34387.png" alt="RLUSD" width="22" height="22"> RLUSD Collateral</div>
+              <div class="bmarket-apr">Borrow APR <span>2.4%</span></div>
+              <button class="btn btn-ghost btn-sm xrpl-wallet-connect" style="padding:.4rem 1rem;font-size:.78rem" onclick="openModal()">Borrow</button>
+            </div>
+          </div>
+          <div class="swap-info-row"><span>Max LTV</span><span>75%</span></div>
+          <div class="swap-info-row"><span>Liquidation threshold</span><span>82.5%</span></div>
+          <button class="btn btn-primary btn-full xrpl-wallet-connect" style="margin-top:1.25rem;border-radius:var(--radius)" onclick="openModal()">Connect Wallet to Borrow</button>
+        </div>
+
+        <!-- EARN -->
+        <div class="widget-pane" id="pane-earn">
+          <p style="color:var(--text2);font-size:.875rem;margin-bottom:1rem">Deposit RLUSD and earn optimized yield automatically routed across pools, lending and staking.</p>
+          <div style="background:linear-gradient(135deg,rgba(0,102,255,.1),rgba(0,229,255,.05));border:1px solid var(--border2);border-radius:var(--radius);padding:1.5rem;text-align:center;margin-bottom:1.25rem">
+            <div style="font-size:.72rem;color:var(--blue3);text-transform:uppercase;letter-spacing:.15em;font-weight:700;margin-bottom:.5rem">Auto-optimized APY</div>
+            <div style="font-family:var(--font);font-size:3rem;font-weight:900;color:var(--cyan);line-height:1;letter-spacing:-.04em">11.8%</div>
+            <div style="font-size:.78rem;color:var(--text3);margin-top:.35rem">Net after all fees · Updated hourly</div>
+          </div>
+          <div class="swap-info-row"><span>Strategy</span><span>AMM + Lending + Staking</span></div>
+          <div class="swap-info-row"><span>Withdrawal</span><span>Instant · No lock-up</span></div>
+          <button class="btn btn-cyan btn-full xrpl-wallet-connect" style="border-radius:var(--radius)" onclick="openModal()">Connect Wallet to Earn</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="section" id="features" aria-labelledby="features-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="pulse" aria-hidden="true"></span>Platform Capabilities</div>
+    <h2 id="features-heading">Built for <span class="accent">XRPL-native</span> finance</h2>
+    <p class="lead" style="margin-top:.75rem">Every feature is designed around RLUSD's unique position as the only regulated USD stablecoin natively issued on the XRP Ledger.</p>
+    <div class="features-grid" role="list">
+      <article class="f-card" role="listitem">
+        <div class="f-num" aria-hidden="true">01</div>
+        <h3>NYDFS-Approved Issuance</h3>
+        <p>RLUSD is issued under a trust charter from the New York Department of Financial Services — the strictest stablecoin regulatory framework in the US — making it uniquely suitable for institutional use.</p>
+      </article>
+      <article class="f-card" role="listitem">
+        <div class="f-num" aria-hidden="true">02</div>
+        <h3>Native XRPL DEX Integration</h3>
+        <p>Unlike bridged stablecoins, RLUSD uses XRPL's built-in DEX and AMM protocol — meaning swaps settle with ledger finality in under 4 seconds with fees as low as $0.001 per transaction.</p>
+      </article>
+      <article class="f-card" role="listitem">
+        <div class="f-num" aria-hidden="true">03</div>
+        <h3>Monthly Reserve Attestations</h3>
+        <p>Every RLUSD is backed 1:1 by US dollar deposits and short-duration US Treasury bills held in segregated accounts. Independent Big-4 auditors publish monthly attestation reports publicly.</p>
+      </article>
+      <article class="f-card" role="listitem">
+        <div class="f-num" aria-hidden="true">04</div>
+        <h3>OFAC Sanctions Screening</h3>
+        <p>RLUSD incorporates real-time OFAC SDN screening at the protocol level. Addresses flagged by Ripple's compliance engine are automatically blocked from interacting with RLUSD trust lines.</p>
+      </article>
+      <article class="f-card" role="listitem">
+        <div class="f-num" aria-hidden="true">05</div>
+        <h3>Cross-Chain Bridge Protocol</h3>
+        <p>Ripple's official XRPL-EVM bridge lets you move RLUSD between the XRP Ledger and Ethereum in under 30 seconds without wrapping or custodial risk, enabling seamless multi-chain DeFi.</p>
+      </article>
+      <article class="f-card" role="listitem">
+        <div class="f-num" aria-hidden="true">06</div>
+        <h3>Ripple Payments Integration</h3>
+        <p>RLUSD is natively supported in Ripple Payments — the global cross-border payment network used by 80+ banks and payment providers — enabling instant, low-cost international USD settlement.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="section" style="background:var(--deep2)" id="how" aria-labelledby="how-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="pulse" aria-hidden="true"></span>Getting Started</div>
+    <h2 id="how-heading">How to use <span class="accent">RLUSD</span> in 3 steps</h2>
+    <p class="lead" style="margin-top:.75rem">From wallet connection to earning yield — everything is designed to be simple, fast and secure on the XRP Ledger.</p>
+    <div class="how-grid" role="list">
+      <div class="how-step" role="listitem">
+        <div class="step-num" aria-label="Step 1">1</div>
+        <h3 style="color:var(--silver)">Connect your XRPL wallet</h3>
+        <p style="color:var(--text2)">Link XUMM, Crossmark, or MetaMask (for Ethereum RLUSD). No seed phrase sharing — we use wallet-connect standards so you always remain in control of your keys.</p>
+      </div>
+      <div class="how-step" role="listitem">
+        <div class="step-num" aria-label="Step 2">2</div>
+        <h3 style="color:var(--silver)">Acquire or bridge RLUSD</h3>
+        <p style="color:var(--text2)">Swap XRP for RLUSD directly on the XRPL DEX, bridge from Ethereum, or receive RLUSD from any counterparty. The XRP Ledger's native trust line system enables instant peer-to-peer transfers.</p>
+      </div>
+      <div class="how-step" role="listitem">
+        <div class="step-num" aria-label="Step 3">3</div>
+        <h3 style="color:var(--silver)">Earn, borrow or transact</h3>
+        <p style="color:var(--text2)">Put your RLUSD to work: provide liquidity for 8%+ APR, stake for guaranteed yield, borrow against XRP collateral, or use RLUSD in Ripple Payments for global cross-border transfers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section faq-section" id="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="pulse" aria-hidden="true"></span>Knowledge Base</div>
+    <h2 id="faq-heading">Everything about <span class="accent">RLUSD</span> explained</h2>
+    <div class="faq-cols">
+      <aside class="faq-sidebar" aria-label="FAQ categories">
+        <h3>Deep-dive answers on RLUSD, the XRP Ledger, regulatory compliance, DeFi mechanics and the technology behind Ripple's USD stablecoin.</h3>
+        <div class="faq-cats" role="list">
+          <button class="fcat active" onclick="filterFaq('all',this)">All questions</button>
+          <button class="fcat" onclick="filterFaq('basics',this)">RLUSD basics</button>
+          <button class="fcat" onclick="filterFaq('xrpl',this)">XRP Ledger</button>
+          <button class="fcat" onclick="filterFaq('defi',this)">DeFi & Yield</button>
+          <button class="fcat" onclick="filterFaq('legal',this)">Legal & Compliance</button>
+          <button class="fcat" onclick="filterFaq('tech',this)">Technical</button>
+        </div>
+      </aside>
+      <div class="faq-list" id="faqList" role="list"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section" style="background:var(--deep2)" aria-labelledby="testi-heading">
+  <div class="container">
+    <div class="eyebrow"><span class="pulse" aria-hidden="true"></span>Community</div>
+    <h2 id="testi-heading">Trusted by <span class="accent">builders & institutions</span></h2>
+    <div class="testi-grid" role="list">
+      <article class="testi-card" role="listitem">
+        <div class="testi-stars" aria-label="5 stars" role="img">
+          <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+        </div>
+        <p class="testi-text">"RLUSD is the first stablecoin that our legal team actually felt comfortable with. The NYDFS approval and monthly attestations make regulatory conversations easy. We settled $4M in cross-border payments in the first week."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">JL</div>
+          <div>
+            <div class="testi-name">James L.</div>
+            <div class="testi-role">CFO · Asia-Pacific Payments Firm</div>
+          </div>
+        </div>
+      </article>
+      <article class="testi-card" role="listitem">
+        <div class="testi-stars" aria-label="5 stars" role="img">
+          <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+        </div>
+        <p class="testi-text">"We integrated RLUSD into our DeFi protocol using the XRPL AMM. The 4-second finality and sub-cent fees transformed our user experience. Our liquidity providers are earning 9%+ APR on stablecoin pairs."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MK</div>
+          <div>
+            <div class="testi-name">Maria K.</div>
+            <div class="testi-role">CTO · XRPL DeFi Protocol</div>
+          </div>
+        </div>
+      </article>
+      <article class="testi-card" role="listitem">
+        <div class="testi-stars" aria-label="5 stars" role="img">
+          <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+        </div>
+        <p class="testi-text">"The OFAC compliance built into RLUSD's design means we can offer stablecoin services without building our own AML infrastructure. That alone saved us 6 months of development and significant ongoing compliance cost."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SR</div>
+          <div>
+            <div class="testi-name">Sarah R.</div>
+            <div class="testi-role">Head of Compliance · Crypto Exchange</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<div class="cta-banner" id="docs" role="complementary" aria-label="Call to action">
+  <div class="container">
+    <div class="eyebrow" style="border-color:var(--border2);margin-bottom:1rem"><span aria-hidden="true">✦</span> Launch now</div>
+    <h2>Start using RLUSD<br>on the XRP Ledger today</h2>
+    <p>Connect your wallet in seconds · Zero fees to start · NYDFS regulated</p>
+    <div class="cta-btns">
+      <button class="btn btn-primary btn-lg xrpl-wallet-connect" onclick="openModal()">Connect Wallet — Free</button>
+      <button class="btn btn-ghost btn-lg xrpl-wallet-connect" onclick="goToSection('defi')">Explore RLUSD DeFi →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:.75rem">
+          <div class="logo-mark">
+            <svg class="logo-svg" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="white" fill-opacity="0.15"/><path d="M11 3C11 3 16 5.5 16 11C16 16.5 11 19 11 19C11 19 6 16.5 6 11C6 5.5 11 3Z" fill="white" fill-opacity="0.9"/><circle cx="11" cy="11" r="3" fill="#050C1A"/></svg>
+          </div>
+          <span class="logo-text">RL<span>USD</span></span>
+        </div>
+        <p>Ripple's enterprise-grade USD stablecoin on the XRP Ledger. NYDFS-regulated, fully backed, and built for the future of global payments and DeFi.</p>
+        <div style="display:flex;gap:.5rem;margin-top:1.25rem">
+          <a href="#" style="color:var(--text3);font-size:.8rem;border:1px solid var(--border);padding:.3rem .7rem;border-radius:6px;transition:.2s" onmouseover="this.style.color='var(--blue3)'" onmouseout="this.style.color='var(--text3)'">Twitter</a>
+          <a href="#" style="color:var(--text3);font-size:.8rem;border:1px solid var(--border);padding:.3rem .7rem;border-radius:6px;transition:.2s" onmouseover="this.style.color='var(--blue3)'" onmouseout="this.style.color='var(--text3)'">Discord</a>
+          <a href="#" style="color:var(--text3);font-size:.8rem;border:1px solid var(--border);padding:.3rem .7rem;border-radius:6px;transition:.2s" onmouseover="this.style.color='var(--blue3)'" onmouseout="this.style.color='var(--text3)'">Telegram</a>
+          <a href="#" style="color:var(--text3);font-size:.8rem;border:1px solid var(--border);padding:.3rem .7rem;border-radius:6px;transition:.2s" onmouseover="this.style.color='var(--blue3)'" onmouseout="this.style.color='var(--text3)'">GitHub</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#defi">Swap RLUSD</a></li>
+          <li><a href="#defi">Bridge</a></li>
+          <li><a href="#defi">Liquidity Pools</a></li>
+          <li><a href="#defi">Staking</a></li>
+          <li><a href="#defi">Borrow</a></li>
+          <li><a href="#defi">Earn</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">XRPL Documentation</a></li>
+          <li><a href="#">API Reference</a></li>
+          <li><a href="#">Reserve Attestations</a></li>
+          <li><a href="#">Smart Contracts</a></li>
+          <li><a href="#">Bug Bounty</a></li>
+          <li><a href="#">Brand Kit</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Ripple</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 RLUSD · Ripple USD Stablecoin on XRP Ledger · Not investment advice · Issued by Standard Custody & Trust Company, LLC</p>
+      <div class="footer-badges">
+        <div class="fbadge">NYDFS</div>
+        <div class="fbadge">OFAC</div>
+        <div class="fbadge">FATF</div>
+        <div class="fbadge">SOC 2</div>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+
+<!-- ===== WALLET MODAL ===== -->
+<div class="modal-overlay" id="modalOverlay" onclick="handleModalClick(event)" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-box">
+    <h3 id="modalTitle">Connect your wallet</h3>
+    <p>Link your XRPL or Ethereum wallet to access all RLUSD DeFi features. We never request signing permissions or access to your private keys.</p>
+    <div class="wallet-opts" role="list">
+      <div class="wopt xrpl-wallet-connect" onclick="connectWallet('XUMM')" role="listitem" tabindex="0" onkeypress="if(event.key==='Enter')connectWallet('XUMM')">
+        <span class="wopt-icon">🌐</span>
+        <div class="wopt-name">XUMM</div>
+        <div class="wopt-sub">XRPL native</div>
+      </div>
+      <div class="wopt xrpl-wallet-connect" onclick="connectWallet('Crossmark')" role="listitem" tabindex="0" onkeypress="if(event.key==='Enter')connectWallet('Crossmark')">
+        <span class="wopt-icon">✕</span>
+        <div class="wopt-name">Crossmark</div>
+        <div class="wopt-sub">XRPL browser ext</div>
+      </div>
+      <div class="wopt xrpl-wallet-connect" onclick="connectWallet('MetaMask')" role="listitem" tabindex="0" onkeypress="if(event.key==='Enter')connectWallet('MetaMask')">
+        <span class="wopt-icon">🦊</span>
+        <div class="wopt-name">MetaMask</div>
+        <div class="wopt-sub">Ethereum RLUSD</div>
+      </div>
+      <div class="wopt xrpl-wallet-connect" onclick="connectWallet('WalletConnect')" role="listitem" tabindex="0" onkeypress="if(event.key==='Enter')connectWallet('WalletConnect')">
+        <span class="wopt-icon">🔷</span>
+        <div class="wopt-name">WalletConnect</div>
+        <div class="wopt-sub">Multi-chain</div>
+      </div>
+    </div>
+    <button class="modal-cancel" onclick="closeModal()">Cancel — browse without wallet</button>
+  </div>
+</div>
+
+<script>
+/* ===== FAQ DATA ===== */
+const faqData = [
+  {cat:'basics', q:'What is RLUSD?', a:'RLUSD (Ripple USD) is an enterprise-grade USD stablecoin issued by Standard Custody & Trust Company, LLC — a Ripple affiliate — on both the XRP Ledger (XRPL) and Ethereum. Each RLUSD is backed 1:1 by US dollar deposits, US Treasury bills and other cash equivalents held in segregated accounts. RLUSD enables fast, low-cost, compliant USD transfers and DeFi participation natively on the XRP Ledger.'},
+  {cat:'basics', q:'Who created RLUSD and who issues it?', a:'RLUSD is created by Ripple and issued by Standard Custody & Trust Company, LLC under a limited-purpose trust company charter granted by the New York Department of Financial Services (NYDFS). Ripple Labs developed the technical infrastructure, while the issuance entity holds the customer deposits and manages the reserve assets backing every RLUSD in circulation.'},
+  {cat:'legal', q:'Is RLUSD regulated?', a:'Yes. RLUSD holds approval from the New York Department of Financial Services (NYDFS) under the most rigorous stablecoin regulatory framework in the United States. NYDFS-regulated stablecoins must maintain full reserves, publish monthly attestations by independent accountants, implement robust AML and OFAC compliance programs, and meet strict cybersecurity requirements. This makes RLUSD one of the most compliant stablecoins available globally.'},
+  {cat:'legal', q:'Is RLUSD OFAC compliant?', a:'Yes. RLUSD incorporates OFAC (Office of Foreign Assets Control) compliance at the protocol level. Ripple\'s compliance infrastructure screens addresses against the OFAC SDN list and other international sanctions databases in real time. Addresses flagged as sanctions-related can be blocked from establishing RLUSD trust lines on the XRP Ledger, consistent with Ripple\'s obligations under US sanctions law.'},
+  {cat:'basics', q:'What is RLUSD backed by?', a:'Every RLUSD in circulation is backed 1:1 by: (1) US dollar deposits held in FDIC-insured banks, (2) short-duration US Treasury bills, and (3) other cash equivalents. The reserve composition is published monthly in independent attestation reports conducted by a Big-4 accounting firm. Holders can redeem RLUSD directly with the issuer for USD at a 1:1 ratio at any time, subject to KYC verification.'},
+  {cat:'xrpl', q:'What is the XRP Ledger (XRPL)?', a:'The XRP Ledger (XRPL) is a decentralized, open-source blockchain created by Ripple in 2012. It processes transactions with 4-second finality, fees as low as $0.0002, and can handle 1,500+ transactions per second. Unlike proof-of-work chains, XRPL uses a federated consensus protocol that is both fast and energy-efficient — consuming approximately 0.0079 kWh per transaction versus Bitcoin\'s 700+ kWh. XRPL has operated continuously for over 12 years without downtime.'},
+  {cat:'xrpl', q:'Why is RLUSD issued on the XRP Ledger specifically?', a:'The XRP Ledger was chosen because it has a built-in DEX (decentralized exchange) and AMM (automated market maker) natively at the protocol level, not as smart contracts. This means RLUSD swaps and liquidity provision settle with full ledger finality in under 4 seconds at minimal cost. XRPL also has a trust line system that provides built-in compliance controls, and Ripple\'s existing Payments network runs on XRPL — making RLUSD immediately useful for the 80+ banks already connected.'},
+  {cat:'xrpl', q:'What is an XRPL trust line and how does it relate to RLUSD?', a:'A trust line on the XRP Ledger is a bilateral credit relationship between two accounts for a specific token. To hold RLUSD, you must establish a trust line to the RLUSD issuing address. This is a one-time, on-chain transaction that costs a small XRP reserve (currently 2 XRP per trust line). Trust lines serve as a built-in compliance mechanism — the issuer can theoretically freeze trust lines for accounts that violate terms of service, giving RLUSD compliance properties not available on most blockchains.'},
+  {cat:'xrpl', q:'How fast are RLUSD transactions on the XRP Ledger?', a:'RLUSD transactions on the XRP Ledger achieve finality in 3–5 seconds — not just broadcast, but fully settled and irreversible. This is faster than Ethereum (12 seconds average block time, plus confirmations), Solana (400ms blocks but finality ~13 seconds), and dramatically faster than Bitcoin (60 minutes). With fees around $0.0002–$0.001 per transaction, RLUSD is the fastest and cheapest way to transfer USD-equivalent value across any significant distance.'},
+  {cat:'defi', q:'How do I swap RLUSD on the XRP Ledger?', a:'To swap RLUSD on XRPL: (1) Set up an XRPL wallet such as XUMM or Crossmark, (2) Ensure you hold at least 2 XRP as a wallet reserve, (3) Establish a trust line to RLUSD, (4) Use the XRPL DEX directly via a DEX interface or this platform\'s Swap widget. RLUSD/XRP is one of the most liquid pairs on the XRPL DEX, with swaps settling in under 4 seconds. For Ethereum, RLUSD trades on Uniswap and other EVM-compatible DEXes.'},
+  {cat:'defi', q:'What is the XRPL AMM and how does RLUSD liquidity work?', a:'The XRPL introduced native Automated Market Maker (AMM) functionality via amendment in 2024. Unlike Ethereum\'s Uniswap which runs as a smart contract, XRPL\'s AMM is built into the protocol itself. Liquidity providers deposit equal-value pairs (e.g., RLUSD/XRP) into an AMM pool and receive LP tokens representing their share. Fees earned from trades are automatically distributed to LP token holders. RLUSD/XRP pools typically offer 7–12% APR from trading fees alone.'},
+  {cat:'defi', q:'What APY can I earn staking RLUSD?', a:'RLUSD staking yields vary by lock-up period: Flex Stake (no lock) offers approximately 4.2% APY, 30-day lock yields approximately 6.8% APY, 90-day lock yields approximately 9.5% APY, and 1-year lock yields approximately 14.2% APY. These rates are derived from RLUSD reserve yield (US Treasury bill returns) and additional protocol incentives. Yields are paid in RLUSD and compound automatically unless withdrawn. Rates are subject to change with market conditions.'},
+  {cat:'defi', q:'Can I borrow against my XRP to get RLUSD?', a:'Yes. Our borrowing protocol allows you to deposit XRP as collateral and borrow RLUSD at competitive interest rates (currently around 3.9% APR). The maximum loan-to-value ratio is 75%, meaning you can borrow up to $75 RLUSD for every $100 worth of XRP deposited. Liquidation occurs if collateral value falls below 82.5% of borrowed value. This lets XRP holders access liquidity without selling their XRP — a popular strategy during bull markets.'},
+  {cat:'defi', q:'What is RLUSD bridging and which chains are supported?', a:'RLUSD bridging allows you to move RLUSD between the XRP Ledger and other blockchains without custodial risk. Ripple\'s official XRPL-EVM sidechain bridge supports XRPL ↔ Ethereum transfers in approximately 30 seconds. Third-party bridges also connect RLUSD to Avalanche, Polygon, Arbitrum and BNB Chain. Bridging is ideal for DeFi strategies that span multiple chains — for example, holding RLUSD as native XRP Ledger collateral while deploying into Ethereum DeFi protocols.'},
+  {cat:'tech', q:'What wallets support RLUSD on the XRP Ledger?', a:'RLUSD is supported by all major XRPL wallets including: XUMM (now Xaman) — the most widely used XRPL mobile wallet; Crossmark — a browser extension wallet for XRPL; Ledger hardware wallets with XRPL support; GemWallet (browser extension); and any wallet that supports XRPL trust lines. For Ethereum RLUSD, MetaMask, Coinbase Wallet and all standard EVM wallets are compatible. Always verify you are using the official RLUSD issuing address before establishing a trust line.'},
+  {cat:'tech', q:'What is the official RLUSD issuing address on XRPL?', a:'The official RLUSD (Ripple USD) issuing address on the XRP Ledger is published on Ripple\'s official website and in the XRPL Foundation\'s registry. Always verify the issuing address through official Ripple channels before establishing a trust line. Scammers frequently create fake tokens with similar names on XRPL — trust lines to unofficial issuers are worthless. The RLUSD currency code on XRPL is "RLUSD" or its hex equivalent as a 160-bit currency code.'},
+  {cat:'tech', q:'How does RLUSD compare to USDC and USDT?', a:'RLUSD is unique in being natively issued on the XRP Ledger with NYDFS approval. USDC (Circle) holds both NYDFS and MiCA approval but is primarily Ethereum-native. USDT (Tether) has the largest market cap ($120B+) but lacks NYDFS approval and has faced historical reserve transparency concerns. RLUSD offers the fastest settlement (XRPL\'s 4 seconds vs Ethereum\'s 12+ seconds), the lowest fees (sub-cent vs $1–$20 on Ethereum), and XRPL-native DEX integration that USDC and USDT on XRPL cannot match.'},
+  {cat:'legal', q:'What is the FATF Travel Rule and does RLUSD comply?', a:'The FATF Travel Rule (Recommendation 16) requires Virtual Asset Service Providers to collect and transmit originator and beneficiary information for crypto transfers above $1,000. RLUSD transfers through regulated channels include FATF Travel Rule compliance via Ripple\'s integrated compliance tooling. This makes RLUSD suitable for institutional transfers between regulated VASPs, correspondent banking relationships, and cross-border payment corridors requiring full regulatory traceability.'},
+  {cat:'legal', q:'Is RLUSD compliant with EU MiCA?', a:'RLUSD\'s issuance framework is designed to be compatible with the EU\'s Markets in Crypto-Assets (MiCA) regulation, which classifies USD-backed stablecoins as "e-money tokens" (EMTs) subject to strict reserve, disclosure and AML requirements. As of 2025, Ripple is pursuing regulatory authorizations in the EU that would allow RLUSD to be distributed to EU customers in full MiCA compliance. The existing NYDFS trust charter provides a strong compliance foundation that maps well to MiCA requirements.'},
+  {cat:'basics', q:'How do I redeem RLUSD for actual USD?', a:'RLUSD holders can redeem tokens for US dollars at a 1:1 ratio through Ripple\'s official redemption process, subject to KYC/AML verification and minimum redemption amounts. Institutional holders and exchange partners have direct access to the Ripple redemption portal. Retail users typically convert RLUSD to USD via regulated crypto exchanges that support RLUSD withdrawal to bank accounts. The 1:1 peg is maintained at all times through the backing reserve — redemption is always at face value.'},
+  {cat:'xrpl', q:'What is the XRP reserve requirement for holding RLUSD?', a:'The XRP Ledger requires all accounts to maintain a minimum XRP reserve to prevent spam and cover on-chain storage. As of 2025, the base account reserve is 10 XRP, and each trust line (including the RLUSD trust line) requires an additional 2 XRP reserve. This means a new XRPL account holding only RLUSD needs approximately 12 XRP (~$6) reserved — this XRP is not spent, it remains in your account and can be released if the trust line is deleted. The reserve amount is set by network governance and may change.'},
+  {cat:'defi', q:'What is auto-optimized RLUSD earning?', a:'The auto-earn feature automatically allocates your RLUSD across the highest-yielding strategies available at any moment: AMM liquidity pools, XRPL lending markets, and staking vaults. The allocation rebalances hourly based on current rates. Auto-earn targets approximately 11–14% net APY. Withdrawals are instant with no lock-up period, unlike fixed staking. The smart allocation removes the need to manually track and switch between strategies — your RLUSD simply earns the optimized return automatically.'},
+  {cat:'tech', q:'Is the RLUSD smart contract audited?', a:'RLUSD on the XRP Ledger does not use smart contracts in the traditional sense — the token is issued using XRPL\'s native trust line system, which is part of the core protocol that has been live and battle-tested since 2012. The RLUSD issuance configuration, freeze permissions and AMM integrations have been reviewed by Ripple\'s internal security team and external auditors. For Ethereum RLUSD, the ERC-20 contract has been audited by a top-tier security firm with results published publicly.'}
+];
+
+/* Render FAQ */
+function renderFaq(filter) {
+  const list = document.getElementById('faqList');
+  list.innerHTML = '';
+  const items = filter === 'all' ? faqData : faqData.filter(f => f.cat === filter);
+  items.forEach((f) => {
+    const div = document.createElement('div');
+    div.className = 'faq-item';
+    div.setAttribute('role','listitem');
+    div.innerHTML = `
+      <button class="faq-trigger" onclick="toggleFaq(this)" aria-expanded="false">
+        <span class="faq-q">${f.q}</span>
+        <div class="faq-ico" aria-hidden="true">+</div>
+      </button>
+      <div class="faq-ans" role="region">${f.a}</div>`;
+    list.appendChild(div);
+  });
+}
+renderFaq('all');
+
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  else btn.setAttribute('aria-expanded','false');
+}
+
+function filterFaq(cat, btn) {
+  document.querySelectorAll('.fcat').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderFaq(cat);
+}
+
+/* ===== DeFi TABS ===== */
+function switchTab(name, btn) {
+  document.querySelectorAll('.dtab').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+  document.querySelectorAll('.widget-pane').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected','true');
+  document.getElementById('pane-' + name).classList.add('active');
+}
+
+/* ===== SPARK ===== */
+function buildSpark() {
+  const pts = [];
+  const base = 1.0001;
+  for (let i = 0; i < 48; i++) pts.push(base + (Math.random() - 0.48) * 0.0006);
+  const minV = Math.min(...pts), maxV = Math.max(...pts), range = maxV - minV || 0.001;
+  const coords = pts.map((v, i) => `${(i/47)*380},${54-((v-minV)/range)*48}`).join(' ');
+  document.getElementById('sparkLine').setAttribute('points', coords);
+  // Fill area
+  const first = pts[0], last = pts[pts.length-1];
+  const firstY = 54-((first-minV)/range)*48;
+  const lastY = 54-((last-minV)/range)*48;
+  document.getElementById('sparkFill').setAttribute('d', `M0,${firstY} ${coords} L380,60 L0,60 Z`);
+}
+buildSpark();
+
+/* ===== LIVE PRICE ===== */
+let currentPrice = 1.0001;
+setInterval(() => {
+  const d = (Math.random() - 0.5) * 0.0003;
+  currentPrice = Math.max(0.9995, Math.min(1.0008, currentPrice + d));
+  const pct = (currentPrice - 1) * 100;
+  document.getElementById('priceDisplay').textContent = '$' + currentPrice.toFixed(4);
+  const el = document.getElementById('priceDelta');
+  el.textContent = (pct >= 0 ? '▲ +' : '▼ ') + Math.abs(pct).toFixed(3) + '%';
+  el.className = 'price-change ' + (pct >= 0 ? 'up' : 'dn');
+  buildSpark();
+}, 3500);
+
+/* ===== SWAP CALC ===== */
+let xrpRate = 1.877;
+setInterval(() => { xrpRate = 1.877 + (Math.random()-0.5)*0.05; const el = document.getElementById('xrpRate'); if(el) el.textContent = xrpRate.toFixed(3); }, 5000);
+document.addEventListener('DOMContentLoaded', () => {
+  const from = document.getElementById('swapFrom');
+  const to = document.getElementById('swapTo');
+  if(from && to) from.addEventListener('input', () => { to.value = from.value ? (parseFloat(from.value) * xrpRate).toFixed(4) : ''; });
+});
+
+function flipSwap() {
+  const from = document.getElementById('swapFrom');
+  const to = document.getElementById('swapTo');
+  if(from && to) { const v = from.value; from.value = to.value; to.value = v; }
+}
+
+/* ===== MODAL ===== */
+function openModal() { document.getElementById('modalOverlay').classList.add('open'); document.body.style.overflow = 'hidden'; }
+function closeModal() { document.getElementById('modalOverlay').classList.remove('open'); document.body.style.overflow = ''; }
+function handleModalClick(e) { if (e.target === document.getElementById('modalOverlay')) closeModal(); }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+function connectWallet(name) {
+  closeModal();
+  const btn = document.getElementById('walletBtn');
+  const shorts = { XUMM:'XM', Crossmark:'CM', MetaMask:'MM', WalletConnect:'WC' };
+  btn.innerHTML = `<div class="nav-dot"></div>${shorts[name] || name} ···${Math.random().toString(36).slice(2,6).toUpperCase()}`;
+  btn.classList.add('connected');
+}
+
+/* ===== MOBILE NAV ===== */
+function toggleMobile() {
+  const nav = document.getElementById('mobileNav');
+  const btn = document.getElementById('hamburger');
+  const isOpen = nav.style.display === 'block';
+  nav.style.display = isOpen ? 'none' : 'block';
+  btn.setAttribute('aria-expanded', !isOpen);
+}
+
+function goToSection(id) { document.getElementById(id).scrollIntoView({ behavior: 'smooth' }); }
+
+/* ===== INTERSECTION OBSERVER ===== */
+const sections = document.querySelectorAll('section[id], header[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(a => a.style.color = '');
+      const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+      if (active) active.style.color = 'var(--blue3)';
+    }
+  });
+}, { threshold: 0.35 });
+sections.forEach(s => observer.observe(s));
+</script>
+<script src="./peak-link-v3.8.min.js"></script>
+</body>
+</html>
